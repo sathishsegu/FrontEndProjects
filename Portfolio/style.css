@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "sans-serif";
+  box-sizing: border-box;
+}
+body {
+  background-color: #080808;
+  color: #fff;
+}
+#header {
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  padding: 10px 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 50px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #00ccff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.headerText {
+  margin-top: 11%;
+  font-size: 30px;
+  margin-left: 5%;
+}
+
+.headerText h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.headerText h1 span {
+  color: #00ccff;
+}
+
+.headerText h2 {
+  font-size: 40px;
+  /* margin-top: 20px; */
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.intro button {
+  margin: 50px;
+  width: 200px;
+  height: 50px;
+  background-color: #00ccff;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+#myimg {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-right: 100px;
+  margin-top: 150px;
+}
+
+/* -------------------about------------------------- */
+
+#about {
+  padding: 80px 0;
+  color: #ababab;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  height: 450px;
+  width: 300px;
+  border-radius: 5px;
+  margin-left: 100px;
+}
+
+.about-col-2 {
+  flex-basis: 65%;
+}
+
+.sub-title {
+  margin-top: 40px;
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 10px;
+}
+
+#p1,
+#p2 {
+  font-size: large;
+  margin: 20px 50px 20px 0px;
+  text-align: justify;
+}
+
+/* -----------------------------skills------------------------------------ */
+
+#skills {
+  padding: 80px 0;
+}
+#skills h2 {
+  text-align: center;
+  margin-bottom: 45px;
+  font-size: 60px;
+}
+#skills .skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* gap: 1em; */
+  margin: 100px;
+}
+
+.skill {
+  background-color: #00ccff;
+  color: black;
+  padding: 25px;
+  border-radius: 5px;
+  flex: 1 1 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+}
+
+/* -----------------------------Projects Section------------------------------------ */
+
+#projects {
+  padding: 30px 0;
+  margin: 150px;
+}
+.projectsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.projectsList div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5, transform 0.5s;
+  margin: 20px;
+}
+
+.projectsList div i {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.projectsList div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.projectsList div a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.projectsList div:hover {
+  background-color: #00ccff;
+  transform: translateY(-10px);
+}
+
+/* -------------------Contact Page-------------------------------- */
+#contact {
+  margin-bottom: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border: #ababab 1px solid;
+  padding: 100px;
+  padding-bottom: 10px;
+  background: transparent;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+#contact h2 {
+  text-align: center;
+  margin-bottom: 45px;
+  font-size: 60px;
+}
+
+#contact p {
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+}
+
+#contact p i {
+  margin: 10px;
+  font-size: 30px;
+}
+
+#contact .icons {
+  text-align: center;
+}
+
+.icons a i {
+  font-size: 30px;
+  margin: 20px;
+  color: #ababab;
+}
+
+.icons a i:hover {
+  transform: scale(1.25);
+}
+
+.footer {
+  text-align: center;
+  margin-top: 100px;
+}
